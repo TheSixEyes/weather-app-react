@@ -22,9 +22,14 @@ const SearchBar = ({ onSearch }) => {
                 value={city}
                 onChange={handleInputChange}
                 placeholder="Enter city name"
+                aria-label="City name"
                 className="p-2 border border-gray-300 rounded"
             />
-            <button type="submit" className="ml-2 p-2 bg-blue-500 text-white rounded">
+            <button
+                type="submit"
+                className="ml-2 p-2 bg-blue-500 text-white rounded"
+                aria-label="Search for weather"
+            >
                 Search
             </button>
         </form>
